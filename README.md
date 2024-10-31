@@ -1,6 +1,4 @@
-Aqui está um exemplo de conteúdo para seu README, cobrindo o que vimos dos seus projetos:
 
----
 
 # Projetos de Estudos e Prática em TypeScript e Orientação a Objetos
 
