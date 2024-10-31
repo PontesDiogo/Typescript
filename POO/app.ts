@@ -31,13 +31,42 @@
 import { DioAccount } from './class/DioAccount'
 import { CompanyAccount } from './class/CompanyAccount'
 import { PeopleAccount } from './class/PeopleAccount'
+import { BonusAccount } from './class/BonusAccount'
 
 
-const peopleAccount: PeopleAccount = new PeopleAccount(1, 'Diogo',10)
-console.log(peopleAccount.getName)
-peopleAccount.deposit()
+// const peopleAccount: PeopleAccount = new PeopleAccount(1, 'Diogo',10)
+// console.log(peopleAccount.getName)
+// peopleAccount.deposit()
 
 const companyAccount: CompanyAccount = new CompanyAccount('Faz site Inc', 22)
-companyAccount.deposit()
-console.log(companyAccount)
+const bonusAccount: BonusAccount = new BonusAccount('Maurilio',33)
+const peopleAccount: PeopleAccount = new PeopleAccount (44, 'Pedro', 10)
+
+
+
+console.log(companyAccount.getName())
+console.log(companyAccount.getBalance())
+console.log(companyAccount.deposit(800))
+console.log(companyAccount.withdraw(20))
+console.log(companyAccount.getLoan(1000))
+
+console.log('\n-------------------')
+
+console.log(bonusAccount.getName())
+console.log(bonusAccount.getBalance())
+console.log(bonusAccount.deposit(200))
+console.log(bonusAccount.withdraw(500))
+
+console.log('\n-------------------')
+
+console.log(peopleAccount.getName())
+console.log(peopleAccount.getBalance())
+console.log(peopleAccount.deposit(800))
+console.log(peopleAccount.withdraw(20))
+console.log(peopleAccount.getLoan(1000))
+
+
+
+
+
 
